@@ -23,24 +23,17 @@ def public_repositories():
         headers["Authorization"] = f"Bearer {TOKEN}"
     with urlopen(Request(f"https://api.github.com/users/{OWNER}/repos?{params}", headers=headers), timeout=20) as response:
         repos = json.load(response)
-
     repos = [r for r in repos if not r.get("fork") and not r.get("archived") and not r.get("private") and r["name"] != OWNER]
-    featured = set(CONFIG.get("featured", []))
-    repos.sort(key=lambda r: (r["name"] in featured, r.get("pushed_at") or r.get("created_at") or ""), reverse=True)
+    repos.sort(key=lambda r: r.get("pushed_at") or r.get("created_at") or "", reverse=True)
     return repos[:CONFIG.get("project_count", 4)]
 
 
 def build_readme(repos):
-    project_links = ""
-    if repos:
-        project_links = "\n\n".join(
-            f'<a href="{escape(r["html_url"])}"><b>{escape(r["name"])}</b></a> — {escape(r.get("description") or "Public repository")}<br><sub>{escape(r.get("language") or "Project")}</sub>'
-            for r in repos
-        )
-    else:
-        project_links = "No public projects to display."
-
-    readme = f'''<div align="center">
+    project_links = "No public projects to display." if not repos else "\n\n".join(
+        f'<a href="{escape(r["html_url"])}"><b>{escape(r["name"])}</b></a> — {escape(r.get("description") or "Public repository")}'
+        for r in repos
+    )
+    readme = '''<div align="center">
 
 <img src="./profile-banner.svg" width="100%" alt="mizuhitochizu profile banner" />
 
@@ -51,24 +44,15 @@ def build_readme(repos):
 
 ## Languages tried
 
-<img src="./languages.svg" width="100%" alt="Languages I have tried" />
+Python · JavaScript · Swift · HTML · CSS · Shell · SQL
 
-## AI tools
+## Coding partners
 
-<img src="./llms.svg" width="100%" alt="AI tools I use" />
-
-<details>
-<summary>Quick list</summary>
-
-- **Languages:** Python, JavaScript, Swift, HTML, CSS, Shell, SQL
-- **AI tools:** Gemini Free, ChatGPT Free, Claude Free
-
-</details>
+Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
 
 ## Recent public work
 
-{project_links}
-'''
+''' + project_links
     (ROOT / "README.md").write_text(readme)
 
 
