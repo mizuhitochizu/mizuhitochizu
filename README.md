@@ -22,3 +22,7 @@
 - **AI tools:** Gemini Free, ChatGPT Free, Claude Free
 
 </details>
+
+## Recent public work
+
+No public projects to display.
