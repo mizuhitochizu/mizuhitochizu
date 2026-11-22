@@ -17,4 +17,4 @@ Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes ge
 
 ## Recent public work
 
-Project links are generated automatically from public repositories.
+No public projects to display.
