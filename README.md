@@ -7,6 +7,18 @@
 
 </div>
 
-## Recent public work
+## Languages tried
 
-Project links are generated automatically from public repositories.
+<img src="./languages.svg" width="100%" alt="Languages I have tried" />
+
+## AI tools
+
+<img src="./llms.svg" width="100%" alt="AI tools I use" />
+
+<details>
+<summary>Quick list</summary>
+
+- **Languages:** Python, JavaScript, Swift, HTML, CSS, Shell, SQL
+- **AI tools:** Gemini Free, ChatGPT Free, Claude Free
+
+</details>
