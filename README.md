@@ -9,20 +9,12 @@
 
 ## Languages tried
 
-<img src="./languages.svg" width="100%" alt="Languages I have tried" />
+Python · JavaScript · Swift · HTML · CSS · Shell · SQL
 
-## AI tools
+## Coding partners
 
-<img src="./llms.svg" width="100%" alt="AI tools I use" />
-
-<details>
-<summary>Quick list</summary>
-
-- **Languages:** Python, JavaScript, Swift, HTML, CSS, Shell, SQL
-- **AI tools:** Gemini Free, ChatGPT Free, Claude Free
-
-</details>
+Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
 
 ## Recent public work
 
-No public projects to display.
+Project links are generated automatically from public repositories.
