@@ -1,36 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
-  <title id="title">mizuhitochizu profile</title>
-  <desc id="desc">A concise animated profile banner and live list of public projects.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">mizuhitochizu profile banner</title>
+  <desc id="desc">A minimal animated profile banner with subtle interactive states.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#090B10"/><stop offset="1" stop-color="#111827"/>
-    </linearGradient>
-    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A78BFA"/>
-    </linearGradient>
-    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0D1117"/><stop offset="1" stop-color="#161B22"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#58A6FF"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
   </defs>
   <style>
-    .card { transition: transform .18s ease, filter .18s ease; }
-    a:hover .card { transform: translateY(-4px); filter: brightness(1.08); }
-    .focus { opacity: 0; }
-    .f0 { animation: focus0 20s infinite; }.f1 { animation: focus1 20s infinite; }.f2 { animation: focus2 20s infinite; }.f3 { animation: focus3 20s infinite; }.f4 { animation: focus4 20s infinite; }
-    @keyframes focus0 { 0% { opacity: 0; transform: translateY(4px); } 2% { opacity: 1; transform: translateY(0); } 18% { opacity: 1; } 20% { opacity: 0; } }@keyframes focus1 { 20% { opacity: 0; transform: translateY(4px); } 22% { opacity: 1; transform: translateY(0); } 38% { opacity: 1; } 40% { opacity: 0; } }@keyframes focus2 { 40% { opacity: 0; transform: translateY(4px); } 42% { opacity: 1; transform: translateY(0); } 58% { opacity: 1; } 60% { opacity: 0; } }@keyframes focus3 { 60% { opacity: 0; transform: translateY(4px); } 62% { opacity: 1; transform: translateY(0); } 78% { opacity: 1; } 80% { opacity: 0; } }@keyframes focus4 { 80% { opacity: 0; transform: translateY(4px); } 82% { opacity: 1; transform: translateY(0); } 98% { opacity: 1; } 100% { opacity: 0; } }
+    .name { transition: letter-spacing .25s ease, fill .25s ease; }
+    .interactive:hover .name { letter-spacing: 1px; fill: #58A6FF; }
+    .interactive:hover .panel { stroke: #58A6FF; stroke-opacity: .7; }
+    .panel { transition: stroke .25s ease, stroke-opacity .25s ease; }
   </style>
-
-  <rect width="1200" height="390" rx="20" fill="url(#bg)"/>
-  <circle cx="1060" cy="58" r="170" fill="#A78BFA" opacity="0.055" filter="url(#soft)"/>
-  <circle cx="1128" cy="308" r="120" fill="#58A6FF" opacity="0.04" filter="url(#soft)"/>
-
-  <g transform="translate(58 58)">
-    <rect width="54" height="4" rx="2" fill="url(#signal)"/>
-    <text x="0" y="58" fill="#F0F6FC" font-family="Inter,Segoe UI,sans-serif" font-size="52" font-weight="700" letter-spacing="-2">mizuhitochizu</text>
+  <rect width="1200" height="260" rx="18" fill="url(#bg)"/>
+  <rect class="panel" x="16" y="16" width="1168" height="228" rx="12" fill="none" stroke="#30363D"/>
+  <g class="interactive">
+    <rect x="64" y="58" width="56" height="4" rx="2" fill="url(#line)"><animate attributeName="width" values="56;84;56" dur="5s" repeatCount="indefinite"/></rect>
+    <text class="name" x="64" y="116" fill="#F0F6FC" font-family="Inter,Segoe UI,sans-serif" font-size="50" font-weight="700" letter-spacing="-1">mizuhitochizu</text>
   </g>
-
-  <text x="58" y="142" fill="#C9D1D9" font-size="17">Code, experiments, and things worth building.</text>
-  <text class="focus f0" x="58" y="178" fill="#8B949E" font-size="17">Python</text><text class="focus f1" x="58" y="178" fill="#8B949E" font-size="17">JavaScript</text><text class="focus f2" x="58" y="178" fill="#8B949E" font-size="17">Swift</text><text class="focus f3" x="58" y="178" fill="#8B949E" font-size="17">AI tools</text><text class="focus f4" x="58" y="178" fill="#8B949E" font-size="17">Computer vision</text>
-  
-
-  <circle cx="1124" cy="190" r="5" fill="#58A6FF"><animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/></circle>
-  <text x="1140" y="194" fill="#6E7681" font-size="12" text-anchor="end">UPDATED</text>
+  <text x="66" y="154" fill="#C9D1D9" font-family="Inter,Segoe UI,sans-serif" font-size="16">Code, experiments, and things worth building.</text>
+  <g font-family="JetBrains Mono,Consolas,monospace" font-size="13" fill="#8B949E">
+    <text x="66" y="188" opacity="0"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.18;.20;1" dur="20s" repeatCount="indefinite"/>Python</text>
+    <text x="66" y="188" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.18;.20;.38;.40;1" dur="20s" repeatCount="indefinite"/>JavaScript</text>
+    <text x="66" y="188" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.38;.40;.58;.60;1" dur="20s" repeatCount="indefinite"/>Swift</text>
+    <text x="66" y="188" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.58;.60;.78;.80;1" dur="20s" repeatCount="indefinite"/>AI tools</text>
+    <text x="66" y="188" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.78;.80;.98;1" dur="20s" repeatCount="indefinite"/>Computer vision</text>
+  </g>
+  <circle cx="1120" cy="66" r="5" fill="#58A6FF"><animate attributeName="opacity" values="1;.25;1" dur="3s" repeatCount="indefinite"/></circle>
+  <text x="1134" y="70" fill="#6E7681" font-family="JetBrains Mono,Consolas,monospace" font-size="11" text-anchor="end">LIVE</text>
 </svg>
