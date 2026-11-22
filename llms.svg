@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
-<title id="title">AI tools I use</title><desc id="desc">Free-tier AI tools used for coding, research, and general assistance.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0D1117"/><stop offset="1" stop-color="#161B22"/></linearGradient></defs>
-<style>.card rect,.card text{transition:.18s ease}.card:hover rect{fill:#1F2937;stroke:#A78BFA;stroke-width:2}.card:hover text{fill:#58A6FF}</style>
-<rect width="1200" height="230" rx="18" fill="url(#bg)"/><text x="36" y="52" fill="#F0F6FC" font-family="Inter,Segoe UI,sans-serif" font-size="22" font-weight="700">AI tools</text><text x="36" y="76" fill="#8B949E" font-family="Inter,Segoe UI,sans-serif" font-size="13">Free tiers · everyday assistance</text>
-<g class="card"><rect x="36" y="112" width="352" height="82" rx="10" fill="#11161D" stroke="#30363D"/><text x="58" y="159" fill="#C9D1D9" font-family="JetBrains Mono,Consolas,monospace" font-size="20">Gemini</text><text x="58" y="179" fill="#8B949E" font-family="Inter,Segoe UI,sans-serif" font-size="12">Free · research &amp; coding</text></g>
-<g class="card"><rect x="424" y="112" width="352" height="82" rx="10" fill="#11161D" stroke="#30363D"/><text x="446" y="159" fill="#C9D1D9" font-family="JetBrains Mono,Consolas,monospace" font-size="20">ChatGPT</text><text x="446" y="179" fill="#8B949E" font-family="Inter,Segoe UI,sans-serif" font-size="12">Free · coding &amp; ideas</text></g>
-<g class="card"><rect x="812" y="112" width="352" height="82" rx="10" fill="#11161D" stroke="#30363D"/><text x="834" y="159" fill="#C9D1D9" font-family="JetBrains Mono,Consolas,monospace" font-size="20">Claude</text><text x="834" y="179" fill="#8B949E" font-family="Inter,Segoe UI,sans-serif" font-size="12">Free · writing &amp; reasoning</text></g>
-</svg>
