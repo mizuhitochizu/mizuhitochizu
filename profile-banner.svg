@@ -1,72 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Mizuhitochizu profile banner</title>
-  <desc id="desc">Original futuristic operator-style profile banner for Mizuhitochizu.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">mizuhitochizu profile</title>
+  <desc id="desc">A concise animated profile banner and live list of public projects.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#090d18"/><stop offset="0.55" stop-color="#11182a"/><stop offset="1" stop-color="#15102a"/>
+      <stop offset="0" stop-color="#090B10"/><stop offset="1" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#86e4ff"/><stop offset="1" stop-color="#528cff"/>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A78BFA"/>
     </linearGradient>
-    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#b68cff"/><stop offset="1" stop-color="#7658d6"/>
-    </linearGradient>
-    <linearGradient id="coat" x1="0" y1="0" x2="0.8" y2="1">
-      <stop offset="0" stop-color="#273454"/><stop offset="1" stop-color="#11182a"/>
-    </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#75a7d5" stroke-opacity="0.09" stroke-width="1"/><circle cx="0" cy="0" r="1.5" fill="#75a7d5" fill-opacity="0.14"/>
-    </pattern>
-    <clipPath id="frame"><rect x="16" y="16" width="1168" height="328" rx="18"/></clipPath>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
   </defs>
+  <style>
+    .card { transition: transform .18s ease, filter .18s ease; }
+    a:hover .card { transform: translateY(-4px); filter: brightness(1.08); }
+    .focus { opacity: 0; }
+    .f0 { animation: focus0 20s infinite; }.f1 { animation: focus1 20s infinite; }.f2 { animation: focus2 20s infinite; }.f3 { animation: focus3 20s infinite; }.f4 { animation: focus4 20s infinite; }
+    @keyframes focus0 { 0% { opacity: 0; transform: translateY(4px); } 2% { opacity: 1; transform: translateY(0); } 18% { opacity: 1; } 20% { opacity: 0; } }@keyframes focus1 { 20% { opacity: 0; transform: translateY(4px); } 22% { opacity: 1; transform: translateY(0); } 38% { opacity: 1; } 40% { opacity: 0; } }@keyframes focus2 { 40% { opacity: 0; transform: translateY(4px); } 42% { opacity: 1; transform: translateY(0); } 58% { opacity: 1; } 60% { opacity: 0; } }@keyframes focus3 { 60% { opacity: 0; transform: translateY(4px); } 62% { opacity: 1; transform: translateY(0); } 78% { opacity: 1; } 80% { opacity: 0; } }@keyframes focus4 { 80% { opacity: 0; transform: translateY(4px); } 82% { opacity: 1; transform: translateY(0); } 98% { opacity: 1; } 100% { opacity: 0; } }
+  </style>
 
-  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
-  <rect x="16" y="16" width="1168" height="328" rx="18" fill="url(#grid)" stroke="#72aee0" stroke-opacity="0.32"/>
-  <g fill="none" stroke="#86e4ff" stroke-width="2">
-    <path d="M16 78V16H78"/><path d="M1122 16h62v62"/><path d="M16 282v62h62"/><path d="M1122 344h62v-62"/>
-  </g>
-  <g fill="#86e4ff" opacity="0.7"><circle cx="36" cy="36" r="3"/><circle cx="1164" cy="36" r="3"/><circle cx="36" cy="324" r="3"/><circle cx="1164" cy="324" r="3"/></g>
+  <rect width="1200" height="390" rx="20" fill="url(#bg)"/>
+  <circle cx="1060" cy="58" r="170" fill="#A78BFA" opacity="0.055" filter="url(#soft)"/>
+  <circle cx="1128" cy="308" r="120" fill="#58A6FF" opacity="0.04" filter="url(#soft)"/>
 
-  <g clip-path="url(#frame)">
-    <path d="M0 286L360 286L435 360H0Z" fill="#86e4ff" opacity="0.025"/>
-    <path d="M690 16L840 16L720 344H630Z" fill="#a78bfa" opacity="0.035"/>
-    <path d="M48 264H470" stroke="#86e4ff" stroke-opacity="0.18"/><path d="M48 272H330" stroke="#86e4ff" stroke-opacity="0.08"/>
-  </g>
-
-  <g transform="translate(930 172)" fill="none" opacity="0.22">
-    <circle r="132" stroke="#86e4ff" stroke-width="1" stroke-dasharray="3 11"/><circle r="108" stroke="#a78bfa" stroke-width="1" stroke-dasharray="20 8"/>
-    <path d="M-132 0H132M0-132V132" stroke="#86e4ff" stroke-width="1"/>
+  <g transform="translate(58 58)">
+    <rect width="54" height="4" rx="2" fill="url(#signal)"/>
+    <text x="0" y="58" fill="#F0F6FC" font-family="Inter,Segoe UI,sans-serif" font-size="52" font-weight="700" letter-spacing="-2">mizuhitochizu</text>
   </g>
 
-  <g transform="translate(815 12)">
-    <path d="M175 22C240 64 272 138 252 218C238 278 184 314 120 318C157 284 174 248 174 205C174 142 145 84 175 22Z" fill="#86e4ff" opacity="0.065"/>
-    <path d="M164 38C199 44 220 72 215 109C211 138 194 153 171 164L128 150C112 128 108 99 119 72C128 52 143 39 164 38Z" fill="#0d1322"/>
-    <path d="M128 67C155 51 195 63 207 89C185 79 162 81 143 93C142 116 131 138 112 151C102 119 105 86 128 67Z" fill="#32415f"/>
-    <path d="M143 93L122 144L110 152L119 105Z" fill="#86e4ff" opacity="0.48"/>
-    <path d="M130 83C150 68 181 72 194 93C202 107 196 134 180 151C168 163 148 162 137 151C123 137 117 112 130 83Z" fill="#d9d8e4"/>
-    <path d="M124 92C132 68 155 58 179 65C154 66 137 76 130 95Z" fill="#1a2440"/>
-    <path d="M139 112C145 108 153 108 159 113" fill="none" stroke="#26324d" stroke-width="3" stroke-linecap="round"/><path d="M174 112C180 108 187 109 191 114" fill="none" stroke="#26324d" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="151" cy="116" r="3" fill="#77cff2" filter="url(#glow)"/><circle cx="184" cy="116" r="3" fill="#77cff2" filter="url(#glow)"/>
-    <path d="M119 90C114 103 114 126 122 143" fill="none" stroke="#86e4ff" stroke-width="5"/><rect x="112" y="112" width="10" height="24" rx="5" fill="#86e4ff" opacity="0.92"/>
-    <path d="M194 86L215 72L223 76L205 101Z" fill="url(#violet)"/>
-    <path d="M111 157C132 170 179 171 202 153L225 186L252 302L187 329L74 302L99 186Z" fill="url(#coat)"/>
-    <path d="M111 157L155 188L202 153L187 179L155 211L124 179Z" fill="#d9d8e4"/><path d="M155 188L187 179L220 236L199 255L155 211Z" fill="#314469"/><path d="M155 188L124 179L87 236L111 255L155 211Z" fill="#1b2743"/>
-    <path d="M99 186L74 302L110 291L124 179Z" fill="#25385a"/><path d="M99 186L74 302" fill="none" stroke="#86e4ff" stroke-width="5" opacity="0.9"/>
-    <path d="M220 195L260 238L247 260L205 224Z" fill="#19243e"/>
-    <g transform="translate(240 224) rotate(-18)"><rect width="88" height="28" rx="5" fill="#10182a" stroke="#86e4ff" stroke-width="2"/><rect x="8" y="8" width="36" height="12" rx="2" fill="#86e4ff" opacity="0.2"/><circle cx="72" cy="14" r="6" fill="#b68cff" filter="url(#glow)"/></g>
-    <path d="M155 211V318" stroke="#86e4ff" stroke-opacity="0.38" stroke-width="2"/><path d="M111 255L155 211L199 255" fill="none" stroke="#86e4ff" stroke-opacity="0.5" stroke-width="2"/><path d="M187 329L252 302L245 318L197 344Z" fill="#0b1020"/>
-  </g>
+  <text x="58" y="142" fill="#C9D1D9" font-size="17">Code, experiments, and things worth building.</text>
+  <text class="focus f0" x="58" y="178" fill="#8B949E" font-size="17">Python</text><text class="focus f1" x="58" y="178" fill="#8B949E" font-size="17">JavaScript</text><text class="focus f2" x="58" y="178" fill="#8B949E" font-size="17">Swift</text><text class="focus f3" x="58" y="178" fill="#8B949E" font-size="17">AI tools</text><text class="focus f4" x="58" y="178" fill="#8B949E" font-size="17">Computer vision</text>
+  
 
-  <g transform="translate(82 92)">
-    <rect width="70" height="5" rx="2.5" fill="#86e4ff"/>
-    <text x="0" y="72" fill="#f4f7ff" font-family="Inter,Segoe UI,sans-serif" font-size="64" font-weight="750" letter-spacing="2">mizuhitochizu</text>
-    <text x="2" y="111" fill="#86e4ff" font-family="JetBrains Mono,Consolas,monospace" font-size="18" letter-spacing="5">OPERATOR // BUILD SYSTEMS</text>
-    <g transform="translate(2 138)"><rect width="464" height="42" rx="21" fill="#090d18" stroke="#86e4ff" stroke-opacity="0.28"/><circle cx="22" cy="21" r="5" fill="#86e4ff" filter="url(#glow)"/><text x="38" y="27" fill="#cbd5e1" font-family="JetBrains Mono,Consolas,monospace" font-size="15">PYTHON  /  JAVASCRIPT  /  SWIFT</text></g>
-  </g>
-
-  <g transform="translate(82 307)"><circle cx="5" cy="5" r="5" fill="#86e4ff" filter="url(#glow)"/><text x="20" y="10" fill="#899bb5" font-family="JetBrains Mono,Consolas,monospace" font-size="12" letter-spacing="2">AI  ·  COMPUTER VISION  ·  PRACTICAL SOFTWARE</text></g>
-  <g transform="translate(1080 290)"><text fill="#899bb5" font-family="JetBrains Mono,Consolas,monospace" font-size="11" letter-spacing="2">STATION</text><text y="22" fill="#86e4ff" font-family="JetBrains Mono,Consolas,monospace" font-size="22" font-weight="700">09</text></g>
+  <circle cx="1124" cy="190" r="5" fill="#58A6FF"><animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/></circle>
+  <text x="1140" y="194" fill="#6E7681" font-size="12" text-anchor="end">UPDATED</text>
 </svg>
