@@ -15,6 +15,8 @@ Python · C/C++ · C# · JavaScript · Swift · HTML · CSS · Shell · SQL
 
 Visual Studio Code, Xcode, Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
 
+I can't afford plus, pro, ultra or max, pls fund me so I can use agents 😭
+
 ## Recent public work
 
 No public projects to display.
