@@ -9,11 +9,11 @@
 
 ## Languages tried
 
-Python · JavaScript · Swift · HTML · CSS · Shell · SQL
+Python · C/C++ · C# · JavaScript · Swift · HTML · CSS · Shell · SQL
 
 ## Coding partners
 
-Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
+Visual Studio Code, Xcode, Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
 
 ## Recent public work
 
