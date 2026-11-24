@@ -9,13 +9,11 @@
 
 ## Languages tried
 
-Python · C/C++ · C# · JavaScript · Swift · HTML · CSS · Shell · SQL
+Python · JavaScript · Swift · HTML · CSS · Shell · SQL
 
 ## Coding partners
 
-Visual Studio Code, Xcode, Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
-
-I can't afford plus, pro, ultra or max, pls fund me so I can use agents 😭
+Gemini, ChatGPT, and Claude — depending on the problem, all three sometimes get an assignment.
 
 ## Recent public work
 
